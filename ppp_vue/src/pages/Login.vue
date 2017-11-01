@@ -70,6 +70,7 @@ import {postLogin} from '../api/api';
             postLogin(loginParams).then(data => {
               console.log("success");
               console.log(data);
+              this.$router.push({path: '/main'});
             })
            // this.$router.push({path: '/table'});
             /*
